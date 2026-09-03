@@ -1,0 +1,8 @@
+O CantinaFlow é um app web responsivo (simulando mobile) para gerenciar pedidos de cantina escolar através de uma interface de chat estilo WhatsApp. O app tem dois perfis:
+
+Aluno/Cliente: vê uma lista de 3 conversas fixas (Realizar Pedido, Suporte, Histórico). Ao abrir o chat de pedido, um bot mostra o cardápio em cards interativos com botões de +/- para quantidade. O usuário finaliza, vê o resumo, escolhe horário de retirada e forma de pagamento. Para Pix, um QR Code é gerado no chat. O status do pedido atualiza em tempo real (Recebido → Em preparação → Pronto).
+
+Atendente/Cantina: vê um painel com todos os pedidos, contadores por status, filtros, e pode avançar o status de cada pedido com um toque — o que envia automaticamente uma mensagem de status para o chat do cliente. Também pode responder diretamente no chat do pedido.
+
+Tecnologia: React + TypeScript + Vite + Tailwind CSS + Bolt Database (Postgres com RLS + realtime via websocket). O banco tem 4 tabelas: menu_items, orders, order_items, messages. Atualizações em tempo real usam as subscriptions do Bolt Database.
+
