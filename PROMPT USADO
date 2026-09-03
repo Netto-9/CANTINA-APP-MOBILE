@@ -1,0 +1,36 @@
+Nome do App: CantinaFlow (ou ZapCantina)
+
+Crie um aplicativo mobile voltado para o registro e gerenciamento de pedidos
+de cantina escolar, com uma interface que simule um aplicativo de mensageria
+(estilo WhatsApp ou Telegram).
+
+1. Objetivos Principais
+- Simulação de Chat: A navegação principal e a realização do pedido devem
+  ocorrer por meio de uma conversa no formato de bate-papo (com mensagens de
+  texto, opções clicáveis e envio de comprovantes).
+- Agilidade: Permitir que alunos, pais e professores realizem e acompanhem
+  solicitações de forma simples e intuitiva.
+
+2. Funcionalidades de Interface (UI/UX)
+- Lista de Conversas (Tela Inicial): Exibir contatos fixos como "Realizar
+  Pedido", "Suporte / Dúvidas" e "Histórico de Pedidos".
+- Tela de Mensageria (Chat): Balões diferenciados para usuário (direita) e
+  bot/atendente (esquerda). Menus em botões dentro da conversa para selecionar
+  itens, horários de retirada e formas de pagamento. Status da mensagem
+  representando o status do pedido.
+
+3. Fluxo do Usuário
+- Entra no chat "Realizar Pedido"
+- Bot envia cardápio do dia em lista interativa
+- Usuário seleciona itens e quantidades
+- Sistema calcula total, exibe resumo, solicita pagamento (Pix, Cartão, Pré-pago)
+- Se Pix, bot gera QR Code na conversa
+- Pedido entra na fila e status atualiza em tempo real no chat
+
+4. Perfis de Acesso
+- Aluno/Cliente: Interface de chat para pedidos e notificações
+- Atendente/Cantina: Painel para visualizar pedidos, alterar status, enviar avisos
+
+5. Tecnologia e Design
+- Design responsivo mobile
+- Cores amigáveis (verde/cinza para mensageria + amarelo/laranja para cantina)
